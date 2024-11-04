@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Alice",
+        "age": 29,
+        "department": "Engineering",
+        "salary": 70000,
+        "experience": 5,
+        "country": "USA",
+        "state": "California",
+        "projects": [
+            {"project_name": "Project A", "hours_week": 20},
+            {"project_name": "Project B", "hours_week": 15}
+        ],
+        "skills": ["Python", "Java", "Machine Learning"]
+    },
+    {
+        "name": "Bob",
+        "age": 32,
+        "department": "Engineering",
+        "salary": 80000,
+        "experience": 8,
+        "country": "USA",
+        "state": "New York",
+        "projects": [
+            {"project_name": "Project C", "hours_week": 30}
+        ],
+        "skills": ["Scala", "Spark", "Hadoop"]
+    },
+    {
+        "name": "Charlie",
+        "age": 25,
+        "department": "HR",
+        "salary": 50000,
+        "experience": 3,
+        "country": "Canada",
+        "state": "Ontario",
+        "projects": [
+            {"project_name": "Project D", "hours_week": 10},
+            {"project_name": "Project E", "hours_week": 20}
+        ],
+        "skills": ["Recruitment", "Employee Relations"]
+    },
+    {
+        "name": "David",
+        "age": 45,
+        "department": "Engineering",
+        "salary": 120000,
+        "experience": 20,
+        "country": "USA",
+        "state": "California",
+        "projects": [
+            {"project_name": "Project F", "hours_week": 25}
+        ],
+        "skills": ["Management", "Python", "Cloud Computing"]
+    },
+    {
+        "name": "Eve",
+        "age": 35,
+        "department": "HR",
+        "salary": 60000,
+        "experience": 10,
+        "country": "Canada",
+        "state": "British Columbia",
+        "projects": [
+            {"project_name": "Project G", "hours_week": 15}
+        ],
+        "skills": ["Employee Relations", "Payroll", "Benefits Administration"]
+    },
+    {
+        "name": "Frank",
+        "age": 28,
+        "department": "Marketing",
+        "salary": 55000,
+        "experience": 6,
+        "country": "USA",
+        "state": "Texas",
+        "projects": [
+            {"project_name": "Project H", "hours_week": 20}
+        ],
+        "skills": ["SEO", "Content Creation", "Social Media"]
+    }
+]

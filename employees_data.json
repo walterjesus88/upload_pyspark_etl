@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Alice",
+        "age": 29,
+        "department": "Engineering",
+        "salary": 70000,
+        "experience": 5,
+        "country": "USA",
+        "state": "California"  
+    }
+]
