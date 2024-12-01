@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 import os
+import time
 
 # Crea una sesión de Spark
 # spark = SparkSession.builder \
@@ -105,6 +106,10 @@ df_selected = df.select([col(column) for column in selected_columns])
 # # Mostrar el resultado o guardarlo en otro archivo
 df_selected.show()
 
+# Paso 3: Carga - Escribe en SQL Server
+print("Iniciando la carga en la base de datos...")
+start_time = time.time()  # Tiempo inicial
+
 # Paso 2: Transformación - Aplica transformaciones necesarias
 # Ejemplo de transformación: Filtrar filas con valores nulos en una columna específica
 #df = df.filter(col("nombre_columna").isNotNull())
@@ -113,6 +118,11 @@ df_selected.show()
 
 # Paso 3: Carga - Escribe en SQL Server
 df_selected.write.jdbc(url=jdbc_url, table=table_name, mode="append", properties=jdbc_properties)
+
+
+end_time = time.time()  # Tiempo final
+execution_time = end_time - start_time
+print(f"Carga completada en {execution_time:.2f} segundos.")
 
 # print("Carga completada.")
 spark.stop()
